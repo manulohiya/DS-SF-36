@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMDB 5000 Movie Dataset | Kaggle</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    <meta name="theme-color" content="#008ABC" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" /><link rel="dns-prefetch" href="https://stats.g.doubleclick.net" /><link rel="dns-prefetch" href="https://js.intercomcdn.com" /><link rel="preload" href="https://az416426.vo.msecnd.net/scripts/a/ai.0.js" as=script /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as=script /><link rel="dns-prefetch" href="https://kaggle2.blob.core.windows.net" />
+    <link href="/content/v/d420a040e581/kaggle/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="manifest" href="/static/json/manifest.json">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic" rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=cc72d4221828"/>
+        <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a6a0cfb913e2"/>
+        <script>
+            
+            (function () {
+                var originalError = window.onerror;
+
+                window.onerror = function (message, url, lineNumber, columnNumber, error) {
+                    var handled = originalError && originalError(message, url, lineNumber, columnNumber, error);
+                    var blockedByCors = message && message.toLowerCase().indexOf("script error") >= 0;
+                    return handled || blockedByCors;
+                };
+            })();
+        </script>
+    <script>
+        var appInsights=window.appInsights||function(config){
+        function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey:"5b3d6014-f021-4304-8366-3cf961d5b90f",
+            disableAjaxTracking: true
+        });
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+    
+    
+    
+ 
+    
+    <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-12629138-1', 'auto');
+    ga('set', 'displayFeaturesTask', null);
+    ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    
+
+
+    <script>
+          window.intercomSettings = {
+            app_id: "koj6gxx6"
+          };
+    </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/koj6gxx6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets"/>
+    <meta name="twitter:creator" content="@sundeepblue" />
+    <meta name="og:url" content="https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset" />
+    <meta name="og:title" content="IMDB 5000 Movie Dataset" />
+    <meta name="og:description" content="5000+ movie data scraped from IMDB website" />
+    <meta name="og:image" content="https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-card.png" />
+
+
+    <script src="/static/assets/manifest.js?v=123a362e8f04"></script>
+<script src="/static/assets/vendor.js?v=ce5ea0a13d72"></script>
+</head>
+<body>
+    
+
+
+
+<div class="site-layout">
+        <div class="site-layout__header">
+            <div data-component-name="SiteHeaderContainer"></div><script>var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({});performance && performance.mark && performance.mark("SiteHeaderContainer.componentCouldBootstrap");</script>
+        </div>
+
+    <div class="site-layout__main-content">
+        
+
+<div data-component-name="DatasetContainer"></div><script>var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"datasetVersionId":287,"datasetVersionNumber":1,"lastVersionNumber":1,"status":"ready","isSavingNewVersion":false,"newDatasetVersionStatus":"ready","currentStatusPercentComplete":1.0,"datasetUrl":"/deepmatrix/imdb-5000-movie-dataset","datasetExternalUrl":"https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset","originalImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-original.png","coverImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-cover.png","cardImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-card.png","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-thumbnail.png","license":"Database released under \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003eOpen Database License\u003c/a\u003e, individual contents under \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003eDatabase Contents License\u003c/a\u003e","voteCount":585,"upVoteUrl":"/deepmatrix/imdb-5000-movie-dataset/vote","ownerProfileUrl":"/deepmatrix","ownerAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/202037-kg.png","ownerDisplayName":"chuansun76","ownerSlug":"deepmatrix","datasetSlug":null,"creatorUserId":202037,"creatorDisplayName":"chuansun76","ownerTwitter":"sundeepblue","lastUpdated":"2016-08-30T03:36:42.737Z","downloadUrl":"/deepmatrix/imdb-5000-movie-dataset/downloads/imdb-5000-movie-dataset.zip","downloadSize":593696,"newNotebookUrl":"/Scripts/NewNotebook?datasetVersionId=287","newScriptUrl":"/Scripts/NewScript?datasetVersionId=287","hasAlreadyVotedUp":false,"isOldDatasetVersion":false,"maxUncompressedFileBytesAllowed":524288000,"maxCompressedFileBytesAllowed":524288000,"maxTopLevelFilesAllowed":20,"numberOfViews":247362,"numberOfDownloads":37769,"numberOfScripts":1501,"numberOfTopics":74,"privateGroupMemberCount":0,"canEdit":false,"canEditSlug":false,"canEditPublishStatus":false,"canEditFeatureStatus":false,"canEditPrivateGroup":false,"canEditDescription":false,"isNewDataset":false,"hideVersionStatuses":true,"cardImageLeft":554,"cardImageTop":0,"cardImageWidth":1584,"cardImageHeight":1584,"coverImageLeft":0,"coverImageTop":860,"coverImageWidth":2176,"coverImageHeight":459,"scripts":[{"name":"Principal Component Analysis with KMeans visuals","url":"/arthurtok/principal-component-analysis-with-kmeans-visuals","lastRunDate":"2017-07-03T13:31:01.373Z","totalVotes":90},{"name":"EDA with Plotly","url":"/adhok93/eda-with-plotly","lastRunDate":"2016-09-03T17:46:28.253Z","totalVotes":32},{"name":"Network Mapping Hollywood actor overlap","url":"/mtoconnor/network-mapping-hollywood-actor-overlap","lastRunDate":"2016-12-20T16:49:59.387Z","totalVotes":22}],"discussions":[{"title":"Principal Component Analysis with KMeans visuals","url":"/arthurtok/principal-component-analysis-with-kmeans-visuals","lastPost":"2017-06-28T23:08:49.63Z","totalReplies":35},{"title":"rank the directors and actors by rating","url":"/ruxizhang/rank-the-directors-and-actors-by-rating","lastPost":"2017-06-18T17:35:55.84Z","totalReplies":10},{"title":"Please update the dataset with the latest movies","url":"/forums/f/1471/imdb-5000-movie-dataset/t/34554/please-update-the-dataset-with-the-latest-movies","lastPost":"2017-06-11T18:57:42.07Z","totalReplies":0}],"contributors":[{"userId":727797,"totalScriptVotes":90,"totalScripts":1,"totalForumMessages":4,"totalForumMessageVotes":3,"totalScore":98.0,"displayName":"Anisotropic","userUrl":"/arthurtok","rank":"1st","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/727797-kg.jpg"},{"userId":459511,"totalScriptVotes":41,"totalScripts":3,"totalForumMessages":4,"totalForumMessageVotes":0,"totalScore":48.0,"displayName":"AdhokshajaPradeep","userUrl":"/adhok93","rank":"2nd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/459511-kg.png"},{"userId":646803,"totalScriptVotes":0,"totalScripts":0,"totalForumMessages":4,"totalForumMessageVotes":27,"totalScore":31.0,"displayName":"steinate","userUrl":"/gatestein","rank":"3rd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/default-thumb.png"}],"licenses":[{"id":1,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003eCC0: Public Domain License\u003c/a\u003e","displaySequence":1},{"id":3,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003eCC BY-NC-SA 4.0 License\u003c/a\u003e","displaySequence":2},{"id":8,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003eCC BY-SA 4.0 License\u003c/a\u003e","displaySequence":3},{"id":5,"description":"Database released under \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003eOpen Database License\u003c/a\u003e, individual contents under \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003eDatabase Contents License\u003c/a\u003e","displaySequence":5},{"id":12,"description":"Other (specified above)","displaySequence":100000},{"id":4,"description":"Unknown License","displaySequence":100001}],"pageMessages":[],"feed":[{"activityType":"script","url":"/ashutosh1309/notebookfb707e924d","userName":"ashutosh1309","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1139646-gp.jpg","date":"2017-07-03T15:41:24.447Z","userDisplayName":"ashu","title":"Notebookfb707e924d","versionNumber":1,"userUrl":"/ashutosh1309"},{"activityType":"scriptRun","url":"/arthurtok/principal-component-analysis-with-kmeans-visuals","userName":"arthurtok","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/727797-kg.jpg","date":"2017-07-03T13:30:59.517Z","userDisplayName":"Anisotropic","title":"Principal Component Analysis with KMeans visuals","versionNumber":43,"userUrl":"/arthurtok"},{"activityType":"scriptRun","url":"/kivaschenko/think-like-as-a-produser","userName":"kivaschenko","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1107738-gp.jpg","date":"2017-07-01T18:37:05.67Z","userDisplayName":"Konstantin Ivaschenko","title":"Think like as a produser","versionNumber":7,"userUrl":"/kivaschenko"},{"activityType":"scriptRun","url":"/aparnamano/checkingin","userName":"aparnamano","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1104525-gp.jpg","date":"2017-07-01T09:35:17.4Z","userDisplayName":"Aparna Mano","title":"CheckingIn","versionNumber":12,"userUrl":"/aparnamano"},{"activityType":"scriptRun","url":"/andreg/test-esa6-decision-trees-clustering","userName":"andreg","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1143823-gr.jpg","date":"2017-06-29T13:14:58.973Z","userDisplayName":"AndréGernandt","title":"(Test) ESA6 - Decision Trees \u0026 Clustering","versionNumber":69,"userUrl":"/andreg"}],"privateGroups":[{"id":0,"name":"Publicly Accessible"}],"owners":[],"discussion":{"canDownvote":false,"dataUrl":"/forums/1471/topics.json","id":1471,"isRootLevel":false,"isSubscribed":false,"initialTopics":null,"paramValues":{"category":"all","kind":"all","page":1,"search":null,"group":"all","sortBy":"hot"}},"newTopicUrl":"/forums/topics/new?forumId=1471","currentTab":"home","topicId":null,"isNewTopic":false,"newTopic":{"allowAttachments":false,"authorRanking":null,"authorTier":"novice","authorType":"topic","forumId":1471,"parentName":"IMDB 5000 Movie Dataset","parentUrl":"/deepmatrix/imdb-5000-movie-dataset"},"dataDictionary":[],"datasetId":138,"title":"IMDB 5000 Movie Dataset","overview":"5000+ movie data scraped from IMDB website","licenseId":5,"description":"# Background\nHow can we tell the greatness of a movie before it is released in cinema? \n\nThis question puzzled me for a long time since there is no universal way to claim the goodness of movies. Many people rely on critics to gauge the quality of a film, while others use their instincts. But it takes the time to obtain a reasonable amount of critics review after a movie is released. And human instinct sometimes is unreliable.\n\n# Question\n1. Given that thousands of movies were produced each year, is there a better way for us to tell the greatness of movie without relying on critics or our own instincts?\n2. Will the number of human faces in movie poster correlate with the movie rating?\n\n# Method\nTo answer this question, I scraped 5000+ movies from IMDB website using a Python library called \u0022scrapy\u0022.\n\nThe scraping process took 2 hours to finish. In the end, I was able to obtain all needed 28 variables for 5043 movies and 4906 posters (998MB), spanning across 100 years in 66 countries. There are 2399 unique director names, and thousands of actors/actresses. Below are the 28 variables:\n\n\u0022movie_title\u0022\n\u0022color\u0022\n\u0022num_critic_for_reviews\u0022\n\u0022movie_facebook_likes\u0022 \n\u0022duration\u0022\n\u0022director_name\u0022\n\u0022director_facebook_likes\u0022\n\u0022actor_3_name\u0022 \n\u0022actor_3_facebook_likes\u0022\n\u0022actor_2_name\u0022\n\u0022actor_2_facebook_likes\u0022\n\u0022actor_1_name\u0022 \n\u0022actor_1_facebook_likes\u0022\n\u0022gross\u0022\n\u0022genres\u0022\n\u0022num_voted_users\u0022\n\u0022cast_total_facebook_likes\u0022 \n\u0022facenumber_in_poster\u0022\n\u0022plot_keywords\u0022\n\u0022movie_imdb_link\u0022\n\u0022num_user_for_reviews\u0022\n\u0022language\u0022\n\u0022country\u0022\n\u0022content_rating\u0022\n\u0022budget\u0022\n\u0022title_year\u0022\n\u0022imdb_score\u0022\n\u0022aspect_ratio\u0022\n\nTo answer question 2, I applied the human face detection algorithm on all the posters using python library called dlib, and extracted the number of faces in posters.\n\n# Blog and Github codes\n\nSee here for more details about the scraping steps, the EDA, and the predictions : https://blog.nycdatascience.com/student-works/machine-learning/movie-rating-prediction/\n\nGithub page: https://github.com/sundeepblue/movie_rating_prediction\n\n\n# Important notes\n\n1. This dataset is by no means to be a comprehensive scraping of all attributes relating to movies. It stemmed from one of my project built from scratch and finished in around one week. So please do not be surprised if you find something is off.\n\n2. This dataset is a proof of concept. It can be used for experimental and learning purpose to get hands dirty on web scraping, basic EDA, and learning algorithms in R or Python. For comprehensive movie analysis and accurate movie ratings prediction, 28 attributes from 5000 movies might not be enough. A decent dataset could contain hundreds of attributes from 50K or more movies, and requires tons of feature engineering.\n\n3. There are around 800 \u00220\u0022s in the \u0022gross\u0022 attribute. This was either caused by (a) no gross number was found in certain movie page, or (b) the response returned by scrapy http request returned nothing in short period of time. So please make your own judgement when analyzing on this attribute. \n\n4. There are around 908 directors whose \u0022director_facebook_likes\u0022 attribute are 0. If somebody did analysis on \u0022directory_facebook_like\u0022 attribute, there could be some off, and say, the top10, or top50 directors could be inaccurate. Thanks for pointing this out by user Kryslor. This is interesting, since the code I used to scrape everybody\u0027s facebook like were identical. See function [parse_facebook_likes_number()](https://github.com/sundeepblue/movie_rating_prediction/blob/master/parse_scraped_data.py). It was hard to directly scrape this data from IMDB website (due to dynamic embedded div frame), so I had to use a hacky way by directly sending request to facebook website (see [line 38 of this file](https://github.com/sundeepblue/movie_rating_prediction/blob/master/movie/spiders/imdb_spider.py)). Perhaps for some directors, facebook did not respond with reasonable result within short timespan (\u003c 0.25 second) and returned \u0022None\u0022 in Python (translated to 0 in my code). \n\n5. For those 0s, you might want to treat them as \u0022missing value\u0022 when using certain machine learning algorithms. \n\n6. Thanks to user \u0022Quinton\u0022, who found a bug in the dataset on 11/23/2016:\n*(November 23, 2016 at 12:08 am) We actually used your IMDB dataset for an Advanced Data Mining class at Rockhurst University in Kansas City, MO. We love the data set and we really appreciate the time it took to create the it. However, we believe we found a small flaw in the data. Not all of the IMDB movie budget numbers are in US dollars, for example, the South Korean movie \u0022The Host\u0022 has its budget numbers in S. Korean Won (Korean currency). But there is no data in the dataset that tells you the currency. The existance of foreign currencies skews the budget data for foreign films particularly for currencies with extreme exchange rates when compared to USD. For instance, many could assume the data set shows \u0022The Host\u0022 cost $12 billion to make when it truthfully cost only 12 billion Won, but the dataset doesn\u0027t make the distinction. It is not just an issue with Korean movies we found Turkish and Japanese movies with the same issue.*\nQuinton was right. When I parsed the currency, I didn\u0027t take the Korean currency into consideration. Therefore please be cautious if you analyze the currency related attributes for non US dollar currencies. The fix is actually quite simple in the corresponding python code.\n\n7. Please be mindful that, analyzing currency related attributes, such as \u0022gross\u0022 or \u0022budget\u0022, is actually more complicated than it seems. For a really thorough and accurate analysis (EDA or prediction), we may want to do some feature engineering on those attributes in a systematic way. For example, one US dollar in 1920 is different from that of 2010. So we need to take ***inflation*** factors across years into consideration, and normalize all US dollars into one basis (a certain year). So do all other currencies (British pound, Chinese RMB Yuan, etc). If you also consider ***exchange rate*** between two different currencies and wanted to convert everything into dollars, things become tricker, because even those rates also varies over time. $1 equals RMB8.4 in 2000 but RMB6.8 in 2015.","slug":"imdb-5000-movie-dataset","isPublished":true,"isRemoved":false,"isFeatured":true,"organizationId":null,"privateGroupId":null,"files":[{"id":888,"name":"movie_metadata.csv","url":"/deepmatrix/imdb-5000-movie-dataset/downloads/movie_metadata.csv.zip","description":"actors.list\n","totalBytes":593696,"blobToken":null,"previewUrl":"/deepmatrix/imdb-5000-movie-dataset/preview/movie_metadata.csv.zip/1","fileType":".csv","downloadUrl":"/deepmatrix/imdb-5000-movie-dataset/downloads/movie_metadata.csv.zip","relativePath":"../input/movie_metadata.csv","isSqliteTable":false,"totalRows":0,"columns":null,"ownerSlug":null,"datasetSlug":null}],"newVersionFiles":[],"datasetVersions":[{"id":287,"slug":"imdb-5000-movie-dataset","name":"IMDB 5000 Movie Dataset","creationDate":"2016-08-30T03:36:42.737Z","versionNumber":1,"versionNotes":"Initial release","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/138/287/229bfb5d3dd1a49cc5ac899c45ca2213/dataset-thumbnail.png","datasetVersionUrl":"/deepmatrix/imdb-5000-movie-dataset/version/1","status":"ready"}],"newFileColumnDescriptions":[]});performance && performance.mark && performance.mark("DatasetContainer.componentCouldBootstrap");</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            preferredFont: "TeX",
+            availableFonts: ["STIX", "TeX"],
+            linebreaks: {
+                automatic: true
+            },
+            EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+        },
+        tex2jax: {
+            inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+            displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+            processEscapes: true,
+            ignoreClass: "tex2jax_ignore|dno"
+        },
+        TeX: {
+            noUndefined: {
+                attributes: {
+                    mathcolor: "red",
+                    mathbackground: "#FFEEEE",
+                    mathsize: "90%"
+                }
+            }
+        },
+        Macros: {
+            href: "{}"
+        },
+        skipStartupTypeset: true,
+        messageStyle: "none"
+    });
+</script>
+
+<script type="text/javascript" async crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+    </div>
+
+        <div class="site-layout__footer">
+            <footer class="site-footer">
+    <div class="site-footer__content">
+        <div class="site-footer__copyright">
+            <span>&copy; 2017 Kaggle Inc</span>
+        </div>
+        <nav class="site-footer__nav">
+            <a href="/team">Our Team</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/contact">Contact/Support</a>
+        </nav>
+        <nav class="site-footer__social">
+            <a class="site-footer__social--twitter" href="http://www.twitter.com/kaggle" title="Follow Kaggle on Twitter">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a class="site-footer__social--facebook" href="http://www.facebook.com/kaggle" title="Follow Kaggle on Facebook">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a class="site-footer__social--linkedin" href="http://www.linkedin.com/companies/kaggle" title="Follow Kaggle on LinkedIn">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+        </div>
+</div>
+
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+
+    Kaggle.Current = {
+        hasMultipleDataSources: true,
+        hasJupyterNotebookEditor: false,
+        antiForgeryToken: 'znNvcyNarqrMzvTUKVHnoPaSSKA1Av7m0Gw63BFKBReQgJhwY28Rit29lKMid1u48v0pGnnIpmf6PdEvJgGBpceqB441',
+        isAnonymous: true,
+        isFullScreen: false,
+        
+        
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+<script src="/content/v/5dbea6ee9ce1/shared/js/kaggle.prism.min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 955737689;
+    w.google_conversion_label = "K8aOCJvdz2oQ2czdxwM";
+    w.google_conversion_value = 0.00;
+    w.google_conversion_currency = "USD";
+    w.google_remarketing_only = false;
+}
+// DO NOT CHANGE THE CODE BELOW.
+goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+    }
+    var conv_handler = window['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+    }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
+
+
+
+<!-- Cheers, RD00155D485BC7p. -->
+
+    <script src="/static/assets/app.js?v=2de2675f3076"></script>
+    
+        <script>
+            (function() {
+                if ('serviceWorker' in navigator) {
+                    
+                    navigator.serviceWorker.register("/static/assets/service-worker.js").then(function(reg) {
+                        
+                        reg.onupdatefound = function() {
+                            
+                            var installingWorker = reg.installing;
+                            installingWorker.onstatechange = function() {
+                                switch (installingWorker.state) {
+                                case 'installed':
+                                    if (navigator.serviceWorker.controller) {
+                                        
+                                        console.log('New or updated content is available.');
+                                    } else {
+                                        
+                                        console.log('Content is now available offline!');
+                                    }
+                                    break;
+                                case 'redundant':
+                                    console.error('The installing service worker became redundant.');
+                                    break;
+                                }
+                            };
+                        };
+                    }).catch(function(e) {
+                      console.error('Error during service worker registration:', e);
+                    });
+                }
+            })();
+        </script>
+</body>
+</html>
